@@ -8,7 +8,7 @@ public class HelloJava {
 	
     public static void main(String[] args)throws Exception {
     	Scanner sc=new Scanner(System.in);
-       System.out.println("Enter Your Choice:\n1.Insert New Job\n2.Job Allocation\n3.Display Available Jobs\n4.Display Employees\n5.Insert New Employee");
+       System.out.println("Enter Your Choice:\n1.Insert New Job\n2.Job Allocation\n3.Display Available Jobs\n4.Display Employees\n5.Insert New Employee\n6.Salary Processing");
        Hello h1=new Hello();
        Emp h2=new Emp();
        Display h3=new Display();
