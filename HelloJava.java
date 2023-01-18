@@ -14,6 +14,7 @@ public class HelloJava {
        Display h3=new Display();
        Empavai h4=new Empavai();
        Empp h5=new Empp();
+       Salaryprocess h6=new Salaryprocess();
        int choice=sc.nextInt();
        switch(choice)
        {
@@ -31,6 +32,9 @@ public class HelloJava {
     	   break;
        case 5:
     	   h5.insert_emp();
+    	   break;
+	 case 6:
+    	   h6.salprocess();
     	   break;
     	   
        }
