@@ -12,7 +12,7 @@ public class Emp {
 	try
 	{
 		String namesal;
-		
+		int c=0;
         Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection cons=DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","");
         Statement sts=cons.createStatement();
@@ -34,7 +34,7 @@ public class Emp {
     		int avai=rss.getInt(7);
     		/*System.out.println(avai);
     		System.out.println("\n");*/
-    		sat(namesal,sal,place,hour,shift,avai);
+    		sat(namesal,sal,place,hour,shift,avai,c);
     		
         }
         			
@@ -49,7 +49,7 @@ public class Emp {
 	}
 	}
 	
-public static void sat(String namesal,int sal,String place,int hour,String shift,int avai)
+public static void sat(String namesal,int sal,String place,int hour,String shift,int avai,int c)
 {
 	try
 	{
@@ -121,6 +121,9 @@ public static void sat(String namesal,int sal,String place,int hour,String shift
 			{
 				System.out.println("eRRor");
 			}
+	if(c==0)
+		System.out.println("No job allocation");
+			
 			
 			
 	
